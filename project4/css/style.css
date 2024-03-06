@@ -1,0 +1,232 @@
+/*applies font*/
+body, html {
+    margin: 0;
+    background: #D9D9D9; /* Updated background color for the website */
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #D9D9D9;
+}
+
+.nav-logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.nav-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-logo span {
+    font-weight: 700; /* Bold for the logo text */
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400; /* Normal weight for nav links */
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* stops the 'Legion of Honor' text from being underlined */
+.nav-logo span {
+    pointer-events: none; 
+}
+
+/* Button styles */
+button {
+    font-size: 1em;
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif; 
+    border-radius: 20px; /* round corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+button:hover {
+    background-color: #555; 
+    transform: scale(1.05); 
+}
+
+/* Footer  */
+footer {
+    background-color: #A0A0A0; 
+    text-align: center;
+    padding: 2em 0; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* left styles */
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.left-content {
+    flex: 1;
+    max-width: 50%; 
+    margin-left: 40px;
+}
+
+.left-image {
+    flex: 1;
+    text-align: right; /* Ensures the image aligns to the right */
+}
+
+.left-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.left button {
+    margin-left: 20px;
+}
+
+/* Right Section Styles */
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.right-image {
+    flex: 1;
+    text-align: left; /* aligns the image to the left */
+}
+
+.right-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-content {
+    flex: 1;
+    max-width: 50%; 
+    text-align: left; /* aligns the text to the left */
+    padding-left: 20%; 
+}
+
+/* Visit Section Styles */
+.visit {
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.visit-content h2,
+.visit-content button {
+    margin: 0 auto;
+    display: block;
+}
+
+.visit-content h2 {
+    margin-bottom: 20px; 
+}
+
+.visit-content button {
+    font-size: 1em;
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px; 
+}
+
+.visit-img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    margin-top: 20px; 
+}
+
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff; 
+}
+
+.contact-section h2 {
+    margin-bottom: 20px; 
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+    margin-bottom: 30px; 
+}
+
+.contact-method {
+    text-align: center;
+}
+
+.icon {
+    font-size: 2rem; /* Large size for the icons */
+    display: block; /* Icons appear on their own line */
+    margin: 0 auto 10px; /* Center the icons and add space below */
+}
+
+.contact-address {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 100px;
+    margin-bottom: 50px; 
+}
+
+.faq-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faq-section h2 {
+    margin-bottom: 20px; /* Space between the title and the FAQ items */
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Space between FAQ items */
+}
+
+.icon {
+    font-size: 2rem; 
+    display: inline-block; 
+    margin-right: 10px; 
+    filter: grayscale(100%); /* Makes the emoji completely gray */
+}
